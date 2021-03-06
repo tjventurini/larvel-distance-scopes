@@ -1,0 +1,42 @@
+{
+    "name": "tjventurini/laravel-distance-scopes",
+    "description": "Laravel Model Scopes to work with Distances of Database Entries that have Lat-Lng Coordinations.",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Venturini",
+            "email": "thomas@venturini.codes"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.0",
+        "tjventurini/service-provider": "^0.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tjventurini\\LaravelDistanceScopes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tjventurini\\LaravelDistanceScopes\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tjventurini\\LaravelDistanceScopes\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.13",
+        "orchestra/canvas": "^6.1"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "canvas": "./vendor/bin/canvas"
+    }
+}

@@ -1,0 +1,4 @@
+/vendor/
+*.vscode-workspace
+composer.lock
+.phpunit.result.cache
